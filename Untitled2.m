@@ -1,0 +1,15 @@
+Color_CmdWinErrors=C-44976
+Color_CmdWinWarnings=C-39936
+ColorsBackground=C-14077644
+ColorsMLintAutoFixBackground=C-10265272
+ColorsText=C-986896
+ColorsUseMLintAutoFixBackground=Btrue
+ColorsUseSystem=Bfalse
+Colors_HTML_HTMLLinks=C-16776961
+Colors_M_Comments=C-16724992
+Colors_M_Errors=C-65536
+Colors_M_Keywords=C-16711681
+Colors_M_Strings=C-26168
+Colors_M_SystemCommands=C-5075968
+Colors_M_UnterminatedStrings=C-65281
+Colors_M_Warnings=C-27648
