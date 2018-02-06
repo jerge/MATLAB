@@ -8,8 +8,8 @@ X = [0 0 1 0.2;
  
 plotVectors(calcVectors(A, b, X));
 %% 3 b)
-A = [1.3 -2.7; 
-     2.7 1.3];
+A = [0.5 0.5; 
+     0.5 0.5];
  % Roterar ungefär 90 grader moturs och förstorar
  
 B = [-0.88 -0.48;
@@ -34,20 +34,20 @@ text(2,2,'X')
 plotVectors(X);
 %% A polygon
 subplot(3,2,3)
-text(1.2,4.8,'A')
+text(1.7,1.7,'A')
 plotVectors(calcVectors(A, b, X));
 %% B polygon
 subplot(3,2,4)
-text(1,1.8,'B')
-plotVectors(calcVectors(B, b, X));
+text(1.7,1.7,'A^2')
+plotVectors(calcVectors(A*A, b, X));
 %% C polygon
 subplot(3,2,5)
-text(2,1,'C')
-plotVectors(calcVectors(C, b, X));
+text(1.7,1.7,'A^3')
+plotVectors(calcVectors(A*A*A, b, X));
 %% D polygon
 subplot(3,2,6)
-text(1.6,1,'D')
-plotVectors(calcVectors(D, b, X));
+text(1.7,1.7,'A^4')
+plotVectors(calcVectors(A*A*A*A, b, X));
 %% Functions
 function out = calcVectors(A, b, X)
     out = A * X + b
