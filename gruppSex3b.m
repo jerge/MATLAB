@@ -17,7 +17,7 @@ B = [-0.88 -0.48;
  % Roterar ungefär 180 grader moturs och förminskar lite
  
 C = [1 0;
-    -1.3 -1];
+    -1.3 1];
  % Roterar lite medurs och minskar y-värdena medan x-värdena är desamma
  
 D = [0.77 -0.42;
@@ -39,15 +39,15 @@ plotVectors(calcVectors(A, b, X));
 %% B polygon
 subplot(3,2,4)
 text(1.7,1.7,'A^2')
-plotVectors(calcVectors(A*A, b, X));
+plotVectors(calcVectors(B, b, X));
 %% C polygon
 subplot(3,2,5)
 text(1.7,1.7,'A^3')
-plotVectors(calcVectors(A*A*A, b, X));
+plotVectors(calcVectors(C, b, X));
 %% D polygon
 subplot(3,2,6)
 text(1.7,1.7,'A^4')
-plotVectors(calcVectors(A*A*A*A, b, X));
+plotVectors(calcVectors(D, b, X));
 %% Functions
 function out = calcVectors(A, b, X)
     out = A * X + b
